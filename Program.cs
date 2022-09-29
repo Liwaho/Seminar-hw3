@@ -3,13 +3,23 @@
 12821 -> да
 23432 -> да*/
 
-/*Console.Write("Введите пятизначное число: ");
+Console.Write("Введите пятизначное число: ");
 int pal = int.Parse(Console.ReadLine());
+int p1 = pal/10000;
+int p2 = (pal-p1*10000)/1000;
+int p4 = (pal%100)/10;
+int p5 = pal%10;
 
-if 
+if (p1 == p5)
+{
+    if (p2 == p4)
+    {
+        Console.WriteLine("Это палиндром.");
+    }
+}
 
-else Console.WriteLine("Это не палиндром.")
-*/
+else Console.WriteLine("Это не палиндром.");
+
 
 /*Задача 21: Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 A (3,6,8); B (2,1,-7), -> 15.84
@@ -36,7 +46,7 @@ Console.WriteLine($"Расстояние между двумя точками = 
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
 
-Console.Write("Введите число: ");
+/*Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine());
 
 for (int i = 1; i <= number; i++)
@@ -44,3 +54,4 @@ for (int i = 1; i <= number; i++)
     double q = Math.Pow(i,2);
     Console.Write($"{q} ");
 }
+*/
